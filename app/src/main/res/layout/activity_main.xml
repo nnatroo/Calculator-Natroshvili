@@ -1,0 +1,386 @@
+git remote add origin https://NugoNatroshvili@bitbucket.org/nugonatroshvili/calculatorhomework.git
+    <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="#00D8FF"
+    android:backgroundTint="@color/teal_200"
+    android:backgroundTintMode="multiply"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="#2AA2B8"
+            android:backgroundTint="@color/teal_200"
+            android:backgroundTintMode="multiply"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:onClick="operationClick"
+            android:text="| x |"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="#2AA2B8"
+            android:backgroundTint="@color/teal_200"
+            android:backgroundTintMode="multiply"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:onClick="operationClick"
+            android:text="x²"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="#2AA2B8"
+            android:backgroundTint="@color/teal_200"
+            android:backgroundTintMode="multiply"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:onClick="operationClick"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="#2AA2B8"
+            android:backgroundTint="@color/teal_200"
+            android:backgroundTintMode="multiply"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:onClick="operationClick"
+            android:text="√"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2AA2B8"
+            android:backgroundTint="@color/teal_200"
+            android:backgroundTintMode="multiply"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:onClick="operationClick"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00FFB7"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="*"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00FFB7"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00FFB7"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="@color/teal_200"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#00D8FF"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:onClick="clearClick"
+                android:text="DEL"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#06ED76"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="equalClick"
+                android:text="="
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/abel"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
